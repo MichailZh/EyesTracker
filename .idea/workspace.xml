@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="" />
+    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZXVyXIxdJ2vX1PTAI0Wpw6dP4Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -94,6 +103,7 @@
       <workItem from="1584989825589" duration="127000" />
       <workItem from="1584990021081" duration="2671000" />
       <workItem from="1584998469133" duration="860000" />
+      <workItem from="1585068561604" duration="1355000" />
     </task>
     <servers />
   </component>
@@ -133,9 +143,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1585007123879" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1584998469124">
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585068561616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584998469124" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1585068561616" />
   </component>
 </project>
