@@ -8,5 +8,7 @@ from django.contrib import admin
 app_name = 'tracker'
 urlpatterns = [
     path(r'', views.index, name='index'),
+    path(r'kaliebrierung/', views.kalibrierung, name='kalibrierung'),
+    path(r'uebungen/', views.uebungen, name='uebungen')
 
 ]

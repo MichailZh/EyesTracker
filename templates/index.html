@@ -2,12 +2,17 @@
 <!doctype html>
 <html>
 <head>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
+        {#body{#}
+        {#    height: 100%;#}
+
         #webcam, #overlay {
             position: absolute;
             top: 0px;
             left: 0;
+            z-index: 10;
         }
     </style>
     <style>
@@ -15,6 +20,17 @@
             position: absolute;
             top: 0;
             right: 1000px;
+
+        }
+        #textOben{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            z-index: 10;
+            color: grey;
+            transform: translate(-50%, -50%);
+            font-weight: 500;
+            font-size: 250%;
         }
     </style>
     <style>
@@ -24,6 +40,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 24pt;
+            z-index: 10;
         }
     </style>
     <style>
@@ -36,61 +53,100 @@
             transition: all 0.1s ease;
             box-shadow: 0 0 20px 10px white;
             border: 4px solid rgba(0,0,0,0.5);
+            z-index: 10;
         }
     </style>
+    <style>
+        #leftHalf {
+            background-color: blue;
+            height: 92.8vh;
+            width: 100%;
+        }
+
+        #rightHalf{
+            height: 92.8vh;
+            width: 100%;
+            background-color: red;
+        }
+        #leftHalf1 {
+            background-color: orange;
+            height: 92.8vh;
+            width: 100%;
+
+        }
+
+        #rightHalf1{
+            height: 92.8vh;
+            width: 100%;
+            background-color: aqua;
+        }
+    </style>
+
 </head>
 <body>
 
-<video id="webcam" width="400" height="300" autoplay></video>
-<canvas id="overlay" width="400" height="300"></canvas>
 
-<nav class="navbar navbar-expand-lg sticky-top justify-content-between" style="background-color: black">
-    <a class="navbar-brand" style="color: white" >Eyetracking</a>
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top justify-content-between" style="background-color: black">
+    <a class="navbar-brand" href="/tracker/" style="color: white" >
+       <h3>Ballstracking</h3>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" style="color: white" > Übungen </a>
+            <li class="nav-item">
+                <a class="nav-link" href="/tracker/uebungen/" style="color: white" > Übungen </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: white">Sprache</a>
+                <a class="nav-link disabled" >Sprache</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" style="color: white">Kalibrierung</a>
+                <a class="nav-link" href="/tracker/kalibrierung/" style="color: white">Kalibrierung</a>
             </li>
 
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link disabled" >SignUp</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" >Login</a>
+            </li>
 
         </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon " ></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-
-        <a class="nav-link" style="color: white">SignUp</a>
-        <a class="nav-link" style="color: white">Login</a>
-
-
-    </div>
-    </div>
 
 </nav>
 
-<canvas id="eyes" width="50" height="25"></canvas>
+{% block eyes %}
+{% endblock %}
+{% block tracker %}
+{% endblock %}
+{% block info %}
+
+        <div class="jumbotron" style="margin-top: 10%">
+            <h1 class="text-center">EyeTracking</h1>
+            <p class="text-center">Dieses Projekt hilft den Meschen mit motorischen Einschränkungen einen Computer zu steuern</p>
+            <hr class="my-4">
+            <p class="text-center">Nutzen Sie diese Taste, um ihres Modell zu kalibrieren</p>
+            <p class="text-center">
+                <a class="btn btn-primary btn-lg" href="/tracker/kalibrierung/" role="button">Kalibrierung</a>
+            </p>
+         </div>
+
+{% endblock %}
 
 
-<button type="button" class="btn btn-primary" id="train">Train!</button>
-
-<div id="target"></div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script src="{% static 'clmtrackr.js' %}"></script>
-<script src="{% static 'main.js' %}"></script>
+
 </body>
 </html>

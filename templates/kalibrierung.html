@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block eyes %}
+    <video id="webcam" width="400" height="300" autoplay></video>
+    <canvas id="overlay" width="400" height="300"></canvas>
+    <canvas id="eyes" width="50" height="25"></canvas>
+
+
+    <button type="button" class="btn btn-primary" id="train">Train!</button>
+
+    <div id="target"></div>
+    <div class="row no-gutters">
+        <div class="col no-gutters">
+            <div id="leftHalf1"></div>
+        </div>
+        <div class="col no-gutters">
+            <div id="rightHalf1"></div>
+        </div>
+    </div>
+    <div id="textOben">
+    <h1>Side</h1>
+    </div>
+
+{% endblock %}
+{% block tracker %}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+    <script src="{% static 'clmtrackr.js' %}"></script>
+    <script src="{% static 'main.js' %}"></script>
+{% endblock %}
+{% block info %}
+{% endblock %}

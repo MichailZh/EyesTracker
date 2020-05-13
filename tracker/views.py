@@ -8,3 +8,10 @@ def index(request):
     return render(request,
                   'index.html'
                   )
+
+def kalibrierung(request):
+
+    return render(request, 'kalibrierung.html')
+
+def uebungen(request):
+    return render(request, 'uebungen.html')

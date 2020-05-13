@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var h = window.screen.availHeight/2;
+    var w = window.screen.availWidth/2;
     const video = $('#webcam')[0];
     const ctrack = new clm.tracker();
     ctrack.init();
@@ -187,6 +189,20 @@ $(document).ready(function() {
         fitModel();
     });
 
+    function curPos(x,y) {
+        var left;
+
+    left = x < w;
+    if(left === true){
+        $('#textOben').html("Left");
+    }
+    else {
+        $('#textOben').html("Right");
+    }
+
+    }
+
+
     function moveTarget() {
         if (currentModel == null) {
             return;
@@ -205,6 +221,8 @@ $(document).ready(function() {
             const $target = $('#target');
             $target.css('left', x + 'px');
             $target.css('top', y + 'px');
+            curPos(x,y);
+
         });
     }
 
