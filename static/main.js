@@ -1,9 +1,16 @@
 $(document).ready(function() {
     var h = window.screen.availHeight/2;
     var w = window.screen.availWidth/2;
+    var left;
+    var secVar = false;
+    var fVAr = false;
+    var sprache = false;
+    var prev = false;
     const video = $('#webcam')[0];
     const ctrack = new clm.tracker();
     ctrack.init();
+    var aud = document.getElementById("sounds");
+    var aud1 = document.getElementById("sounds1");
     const overlay = $('#overlay')[0];
     const overlayCC = overlay.getContext('2d');
 
@@ -188,20 +195,45 @@ $(document).ready(function() {
     $('#train').click(function() {
         fitModel();
     });
+    $('#test').click(function(){
+        sprache = true;
+        document.getElementById("webcam").style.visibility = "hidden";
+        document.getElementById("train").style.visibility = "hidden";
+        document.getElementById("overlay").style.visibility = "hidden";
+        document.getElementById("dog").style.visibility = "visible";
+        document.getElementById("pig").style.visibility = "visible";
+    });
+
 
     function curPos(x,y) {
-        var left;
+        left = x < w;
+        if(left === true && prev===false && sprache === true){
+            $('#textOben').html("Left");
+            fVAr = true;
+            if(secVar === true){
+                clearTimeout(timer2);
+                secVar = false;
+            }
+            timer1 = setTimeout(play1,1000);
+        }
+        else if(left === false && prev===true && sprache === true){
+            $('#textOben').html("Right");
+            secVar = true;
+            if(fVAr === true){
+                clearTimeout(timer1);
+                fVAr = false;
+            }
+            timer2 = setTimeout(play2, 1000);
 
-    left = x < w;
-    if(left === true){
-        $('#textOben').html("Left");
+        }
+        prev = left;
     }
-    else {
-        $('#textOben').html("Right");
+    function play1() {
+        aud.play();
     }
-
+    function play2() {
+        aud1.play();
     }
-
 
     function moveTarget() {
         if (currentModel == null) {

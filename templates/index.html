@@ -42,6 +42,27 @@
             font-size: 24pt;
             z-index: 10;
         }
+        #pig {
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 100px;
+            z-index: 9;
+            visibility: hidden;
+        }
+        #dog {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 100px;
+            z-index: 9;
+            visibility: hidden;
+        }
+
     </style>
     <style>
         #target {
@@ -97,7 +118,7 @@
                 <a class="nav-link" href="/tracker/uebungen/" style="color: white" > Übungen </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" >Sprache</a>
+                <a role="button" class="nav-link" id="test">Sprache</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/tracker/kalibrierung/" style="color: white">Kalibrierung</a>
@@ -126,7 +147,7 @@
 {% endblock %}
 {% block info %}
 
-        <div class="jumbotron" style="margin-top: 10%">
+        <div class="jumbotron" style="margin-top: 10%; background-color: lightblue">
             <h1 class="text-center">EyeTracking</h1>
             <p class="text-center">Dieses Projekt hilft den Meschen mit motorischen Einschränkungen einen Computer zu steuern</p>
             <hr class="my-4">
@@ -137,6 +158,7 @@
          </div>
 
 {% endblock %}
+
 
 
 

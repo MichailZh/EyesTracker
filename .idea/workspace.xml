@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="" />
+    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/Dog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Dog.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Pig.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Schwein.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EyesTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EyesTracker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/kalibrierung.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/kalibrierung.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,15 +44,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\IdeaProjects\EyesTracker\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\micha\IdeaProjects\EyesTracker\static" />
       <recent name="C:\Users\micha\IdeaProjects\EyesTracker\tracker" />
@@ -118,7 +132,24 @@
       <workItem from="1589382631777" duration="29000" />
       <workItem from="1589382670894" duration="6700000" />
       <workItem from="1589392163641" duration="2602000" />
-      <workItem from="1589394792034" duration="2559000" />
+      <workItem from="1589394792034" duration="3193000" />
+      <workItem from="1589469718288" duration="1585000" />
+      <workItem from="1589475057081" duration="30000" />
+      <workItem from="1589476049970" duration="272000" />
+      <workItem from="1589476879969" duration="17000" />
+      <workItem from="1589477007388" duration="13000" />
+      <workItem from="1589478114854" duration="173000" />
+      <workItem from="1589479708742" duration="710000" />
+      <workItem from="1589483874607" duration="654000" />
+      <workItem from="1591547582765" duration="22000" />
+      <workItem from="1591555598554" duration="1236000" />
+      <workItem from="1591715506407" duration="25000" />
+      <workItem from="1592246140253" duration="201000" />
+      <workItem from="1592246368224" duration="132000" />
+      <workItem from="1592246518692" duration="124000" />
+      <workItem from="1592246683660" duration="1320000" />
+      <workItem from="1592248237711" duration="2186000" />
+      <workItem from="1592318344231" duration="6169000" />
     </task>
     <task id="LOCAL-00001" summary="V1.1">
       <created>1585086564886</created>
@@ -162,41 +193,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="416" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584988282272" />
-    <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584989466968">
+    <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592320920316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584989466968" />
+    <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592320920316" />
     <state x="595" y="120" key="CommitChangelistDialog2" timestamp="1589397349701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="595" y="120" key="CommitChangelistDialog2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589397349701" />
-    <state x="741" y="279" key="FileChooserDialogImpl" timestamp="1587120934910">
+    <state x="741" y="279" key="FileChooserDialogImpl" timestamp="1589475086440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1587120934910" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1589394768069">
+    <state x="741" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589475086440" />
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1592255764551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589394768069" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1589394768069">
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592255764551" />
+    <state width="1878" height="282" key="GridCell.Tab.0.center" timestamp="1592255764551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589394768069" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1589394768069">
+    <state width="1878" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592255764551" />
+    <state width="1878" height="282" key="GridCell.Tab.0.left" timestamp="1592255764551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589394768069" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1589394768069">
+    <state width="1878" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592255764551" />
+    <state width="1878" height="282" key="GridCell.Tab.0.right" timestamp="1592255764551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589394768069" />
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1585423280603">
+    <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592255764551" />
+    <state x="464" y="166" key="SettingsEditor" timestamp="1591559121647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1585423280603" />
-    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587123362013">
+    <state x="464" y="166" key="SettingsEditor/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1591559121647" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592318344128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1587123362013" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592318344128" />
+    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589397388521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589397388521" />
   </component>
 </project>

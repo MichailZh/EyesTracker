@@ -5,8 +5,15 @@
     <video id="webcam" width="400" height="300" autoplay></video>
     <canvas id="overlay" width="400" height="300"></canvas>
     <canvas id="eyes" width="50" height="25"></canvas>
-
-
+    <img src="{% static "Schwein.png" %}" id="pig">
+    <img src="{% static "Dog.png" %}" id="dog">
+    <audio id="sounds">
+        <source src="{% static "Dog.wav" %}" type="audio/wav">
+    </audio>
+    <audio id="sounds1">
+        <source src="{% static "Pig.wav" %}" type="audio/wav">
+    </audio>
+{#    <button type="button" class="btn btn-success" id="test">Test</button>#}
     <button type="button" class="btn btn-primary" id="train">Train!</button>
 
     <div id="target"></div>
