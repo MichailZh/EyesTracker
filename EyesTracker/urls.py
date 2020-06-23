@@ -7,6 +7,7 @@ from django.conf.urls import include, url
 from tracker import views
 
 urlpatterns = {
+    url(r'^$', lambda r: HttpResponseRedirect('tracker/')),
     url(r'^tracker/', include('tracker.urls')),
     url(r'^tracker/kalibrierung', views.kalibrierung, name='kalibrierung'),
     url(r'^tracker/uebungen', views.uebungen, name='uebungen')
