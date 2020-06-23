@@ -14,4 +14,8 @@ def kalibrierung(request):
     return render(request, 'kalibrierung.html')
 
 def uebungen(request):
-    return render(request, 'Einleitung.html')
+    f = open('README.md', 'r')
+    file_content = f.read()
+    f.close()
+    context = {'file_content': file_content}
+    return render(request, "Einleitung.html", context)

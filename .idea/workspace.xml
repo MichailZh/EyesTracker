@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="README.md">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Einleitung.html" afterDir="false" />
+    <list default="true" id="29f290b6-3d8f-45c4-a0ea-1a23d33a9652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Einleitung.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Einleitung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracker/views.py" afterDir="false" />
     </list>
@@ -40,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +58,7 @@
       <recent name="C:\Users\micha\IdeaProjects\EyesTracker\tracker" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\IdeaProjects\EyesTracker" />
       <recent name="C:\Users\micha\IdeaProjects\EyesTracker\static" />
     </key>
   </component>
@@ -153,7 +155,10 @@
       <workItem from="1592756317819" duration="39000" />
       <workItem from="1592906669965" duration="380000" />
       <workItem from="1592907072418" duration="34000" />
-      <workItem from="1592907242347" duration="2109000" />
+      <workItem from="1592907242347" duration="2650000" />
+      <workItem from="1592909960573" duration="2844000" />
+      <workItem from="1592913210597" duration="182000" />
+      <workItem from="1592913404155" duration="758000" />
     </task>
     <task id="LOCAL-00001" summary="V1.1">
       <created>1585086564886</created>
@@ -183,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592336960504</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="README.md">
+      <created>1592909357906</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592909357906</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,38 +222,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592320920316" />
-    <state x="595" y="120" key="CommitChangelistDialog2" timestamp="1592909259901">
+    <state x="595" y="120" key="CommitChangelistDialog2" timestamp="1592914383600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="595" y="120" key="CommitChangelistDialog2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909259901" />
+    <state x="595" y="120" key="CommitChangelistDialog2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592914383600" />
     <state x="741" y="279" key="FileChooserDialogImpl" timestamp="1589475086440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="279" key="FileChooserDialogImpl/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1589475086440" />
-    <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1592909239629">
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1592914383637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909239629" />
-    <state width="1878" height="282" key="GridCell.Tab.0.center" timestamp="1592909239629">
+    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592914383637" />
+    <state width="1878" height="282" key="GridCell.Tab.0.center" timestamp="1592914383637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909239629" />
-    <state width="1878" height="282" key="GridCell.Tab.0.left" timestamp="1592909239628">
+    <state width="1878" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592914383637" />
+    <state width="1878" height="282" key="GridCell.Tab.0.left" timestamp="1592914383637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909239628" />
-    <state width="1878" height="282" key="GridCell.Tab.0.right" timestamp="1592909239629">
+    <state width="1878" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592914383637" />
+    <state width="1878" height="282" key="GridCell.Tab.0.right" timestamp="1592914383637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909239629" />
+    <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592914383637" />
     <state x="464" y="166" key="SettingsEditor" timestamp="1591559121647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="166" key="SettingsEditor/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1591559121647" />
-    <state x="553" y="257" key="Vcs.Push.Dialog.v2" timestamp="1592336965186">
+    <state x="553" y="257" key="Vcs.Push.Dialog.v2" timestamp="1592909359695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592336965186" />
+    <state x="553" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1592909359695" />
     <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1592756319236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
