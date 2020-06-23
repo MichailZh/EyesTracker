@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: ballstracker-com-dns
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    prometheus.io/probe: "true"
+  labels:
+    app: ballstracker
+  name: ballstracker
+  namespace: iconatron
+spec:
+  rules:
+    - host: ballstracker.com
+      http:
+        paths:
+          - backend:
+              serviceName: ballstracker
+              servicePort: 80
+            path: /
+    - host: www.ballstracker.com
+      http:
+        paths:
+          - backend:
+              serviceName: ballstracker
+              servicePort: 80
+            path: /
+  tls:
+  - hosts:
+    - ballstracker.com
+    - www.ballstracker.com
+    secretName: ballstracker-com-tls
