@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: ballstracker
-          image: michailzh/ballstracker:1
+          image: michailzh/ballstracker:2
           imagePullPolicy: IfNotPresent
           readinessProbe:
             failureThreshold: 3
