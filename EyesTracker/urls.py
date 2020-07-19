@@ -10,7 +10,7 @@ urlpatterns = {
     url(r'^$', lambda r: HttpResponseRedirect('tracker/')),
     url(r'^tracker/', include('tracker.urls')),
     url(r'^tracker/kalibrierung', views.kalibrierung, name='kalibrierung'),
-    url(r'^tracker/uebungen', views.uebungen, name='uebungen')
+    url(r'^tracker/anleitung', views.anleitung, name='anleitung')
     # url(r'^$', lambda r: HttpResponseRedirect('tracker/')),
 
 }
