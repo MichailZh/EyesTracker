@@ -4,13 +4,20 @@ $(document).ready(function() {
     var left;
     var secVar = false;
     var fVAr = false;
+    var tVar = false;
+    var fourVar = false;
     var sprache = false;
+    var janein = false;
     var prev = false;
     const video = $('#webcam')[0];
     const ctrack = new clm.tracker();
     ctrack.init();
     var aud = document.getElementById("sounds");
     var aud1 = document.getElementById("sounds1");
+    var aud2 = document.getElementById("sounds2");
+    var aud3 = document.getElementById("sounds3");
+
+
     const overlay = $('#overlay')[0];
     const overlayCC = overlay.getContext('2d');
 
@@ -197,13 +204,31 @@ $(document).ready(function() {
     });
     $('#test').click(function(){
         sprache = true;
+        janein = false;
+        off3();
+        off4();
         document.getElementById("webcam").style.visibility = "hidden";
         document.getElementById("train").style.visibility = "hidden";
         document.getElementById("overlay").style.visibility = "hidden";
         document.getElementById("dog").style.visibility = "visible";
         document.getElementById("pig").style.visibility = "visible";
+        document.getElementById("ja").style.visibility = "hidden";
+        document.getElementById("nein").style.visibility = "hidden";
     });
+    $('#test1').click(function(){
+        sprache = false;
+        janein = true;
+        off1();
+        off2();
+        document.getElementById("webcam").style.visibility = "hidden";
+        document.getElementById("train").style.visibility = "hidden";
+        document.getElementById("overlay").style.visibility = "hidden";
+        document.getElementById("dog").style.visibility = "hidden";
+        document.getElementById("pig").style.visibility = "hidden";
+        document.getElementById("ja").style.visibility = "visible";
+        document.getElementById("nein").style.visibility = "visible";
 
+    });
 
     function curPos(x,y) {
         left = x < w;
@@ -211,28 +236,87 @@ $(document).ready(function() {
             $('#textOben').html("Left");
             fVAr = true;
             if(secVar === true){
-                clearTimeout(timer2);
+                clearInterval(timer2);
                 secVar = false;
             }
-            timer1 = setTimeout(play1,1000);
+            off3();
+            off4();
+            timer1 = setInterval(play1,1000);
         }
         else if(left === false && prev===true && sprache === true){
             $('#textOben').html("Right");
             secVar = true;
             if(fVAr === true){
-                clearTimeout(timer1);
+                clearInterval(timer1);
                 fVAr = false;
             }
-            timer2 = setTimeout(play2, 1000);
+            off3();
+            off4();
+            timer2 = setInterval(play2, 1000);
+
+        }
+        else if(left === true && prev===false && janein === true){
+            $('#textOben').html("Left");
+            tVar = true;
+            if(fourVar === true){
+                clearInterval(timer4);
+                fourVar = false;
+            }
+            off1();
+            off2();
+            timer3 = setInterval(play3,1000);
+        }
+        else if(left === false && prev===true && janein === true){
+            $('#textOben').html("Right");
+            fourVar = true;
+            if(tVar === true){
+                clearInterval(timer3);
+                tVar = false;
+            }
+            off1();
+            off2();
+            timer4 = setInterval(play4, 1000);
 
         }
         prev = left;
+
+
+    }
+    function off1() {
+        if(fVAr === true){
+            clearInterval(timer1);
+            fVAr = false;
+        }
+    }
+    function off2() {
+        if(secVar === true){
+            clearInterval(timer2);
+            secVar = false;
+        }
+    }
+    function off3() {
+        if(tVar === true){
+            clearInterval(timer3);
+            tVar = false;
+        }
+    }
+    function off4() {
+        if(fourVar === true){
+            clearInterval(timer4);
+            fourVar = false;
+        }
     }
     function play1() {
         aud.play();
     }
     function play2() {
         aud1.play();
+    }
+    function play3() {
+        aud2.play();
+    }
+    function play4() {
+        aud3.play();
     }
 
     function moveTarget() {

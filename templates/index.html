@@ -53,6 +53,28 @@
             z-index: 9;
             visibility: hidden;
         }
+        #ja{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            z-index: 10;
+            color: black;
+            transform: translate(-50%, -50%);
+            font-weight: 500;
+            font-size: 500%;
+            visibility: hidden;
+        }
+        #nein{
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            z-index: 10;
+            color: black;
+            transform: translate(-50%, -50%);
+            font-weight: 500;
+            font-size: 500%;
+            visibility: hidden;
+        }
         #dog {
             position: absolute;
             top: 50%;
@@ -117,13 +139,16 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/tracker/uebungen/" style="color: white">Einleitung</a>
+                <a class="nav-link" href="/tracker/anleitung/" style="color: white">Anleitung</a>
             </li>
             <li class="nav-item">
-                <a role="button" class="nav-link" id="test" style="color: white" >Sprache</a>
+                <a role="button" class="nav-link" id="test" style="color: white" >Übungen</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/tracker/kalibrierung/" style="color: white">Kalibrierung</a>
+            </li>
+            <li class="nav-item">
+                <a role="button" class="nav-link" id="test1" style="color: white">Ja/Nein</a>
             </li>
 
         </ul>
