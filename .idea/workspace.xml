@@ -184,10 +184,6 @@
     </state>
     <state x="482" y="88" key="#EyesTracker/0.23.1680.977@0.23.1680.977" timestamp="1589402920258" />
     <state x="482" y="88" key="#EyesTracker/0.23.1680.978@0.23.1680.978" timestamp="1589402779054" />
-    <state x="553" y="183" key="#Inspections" timestamp="1584989032361">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="553" y="183" key="#Inspections/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584989032361" />
     <state x="391" y="167" key="#Project_Structure" timestamp="1589403548782">
       <screen x="0" y="23" width="1680" height="977" />
     </state>
@@ -196,7 +192,6 @@
     <state x="238" y="153" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592935436578">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="416" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584988282272" />
     <state x="238" y="153" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.966@0.23.1680.966" timestamp="1592935436578" />
     <state x="364" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.975@0.23.1680.975" timestamp="1589402362379" />
     <state x="238" y="154" width="1071" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.977@0.23.1680.977" timestamp="1589403271876" />
@@ -204,7 +199,6 @@
     <state x="637" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592481154575">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="728" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1584989466968" />
     <state x="637" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.966@0.23.1680.966" timestamp="1592481154575" />
     <state x="637" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.977@0.23.1680.977" timestamp="1589403158945" />
     <state x="595" y="120" key="CommitChangelistDialog2" timestamp="1589397349701">
@@ -270,16 +264,19 @@
     <state x="57" y="571" key="com.intellij.ide.util.TipDialog" timestamp="1592934879226">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1585423280603" />
     <state x="585" y="347" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1592410267815" />
     <state x="57" y="571" key="com.intellij.ide.util.TipDialog/0.23.1680.967@0.23.1680.967" timestamp="1592934879226" />
     <state x="585" y="350" key="com.intellij.ide.util.TipDialog/0.23.1680.975@0.23.1680.975" timestamp="1589455304470" />
     <state x="585" y="351" key="com.intellij.ide.util.TipDialog/0.23.1680.978@0.23.1680.978" timestamp="1589402485656" />
-    <state x="674" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592935125278">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595191114253">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1587123362013" />
+    <state x="770" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1595191114253" />
     <state x="674" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.966@0.23.1680.966" timestamp="1592935125278" />
     <state x="674" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.967@0.23.1680.967" timestamp="1592934877153" />
+    <state x="756" y="325" key="git4idea.merge.GitMergeDialog" timestamp="1595191135594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="325" key="git4idea.merge.GitMergeDialog/0.0.1920.1040/-1920.644.1920.1040@0.0.1920.1040" timestamp="1595191135594" />
   </component>
 </project>
